@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw
 from re import findall
 
 def stega_encrypt():
+    '''USE ASCII SYMBOLS ONLY'''
     keys = []
     img = Image.open(input("path to image: "))
     draw = ImageDraw.Draw(img)
