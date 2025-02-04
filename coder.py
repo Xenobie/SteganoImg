@@ -37,6 +37,7 @@ def stega_decrypt():
     return ''.join([chr(elem) for elem in a])
 
 if str(input('enter operation (encrypt/decrypt): ')) == 'encrypt':
+    print('USE ASCII SYMBOLS AND .bmp FILES ONLY')
     stega_encrypt()
 else:
     print('Your message: ', stega_decrypt())
